@@ -3917,28 +3917,27 @@ input, select, textarea {
 
 	}
 
-	/* For screens smaller than 768px (typical touch phone screens) */
-@media (max-width: 767px) {
-	.hover-wrap {
-	  position: static; /* Change the position to static for mobile */
-	}
-  
-	.overlay {
-	  opacity: 1; /* Show the overlay by default on mobile */
-	  transition: none; /* Remove the transition effect on mobile */
-	}
-  
-	.drum-text {
-		color: white;
-		background-color: #608bdc;
-		font-size: 16px; 
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		text-align: center;
-		width: 80%; 
-		height: 80%; 
-		padding: 5px; 
+	@media (max-width: 1023px) {
+		.hover-wrap {
+		  position: static; /* Change the position to static for mobile */
+		}
+	  
+		.overlay {
+		  opacity: 1; /* Show the overlay by default on mobile */
+		  transition: none; /* Remove the transition effect on mobile */
+		}
+	  
+		.drum-text {
+		  color: white;
+		  background-color: #608bdc;
+		  font-size: 1em; /* Adjust the font size for small screens and tablets */
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		  text-align: center;
+		  width: 80%;
+		  height: 80%;
+		  padding: 0.5em; /* Adjust the padding for small screens and tablets */
+		}
 	  }
-  }
